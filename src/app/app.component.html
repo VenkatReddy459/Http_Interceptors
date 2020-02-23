@@ -1,0 +1,19 @@
+<div class="container">
+  <br>
+  <input type="text" [(ngModel)]="dataFilter.title">
+  <br> <br>
+<table border="4" class="table table-bordered">
+  <tr>
+    <th>UserID</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>body</th>
+  </tr>
+  <tr *ngFor="let employee of employees">
+    <td>{{employee.userId}}</td>
+    <td>{{employee.id}}</td>
+    <td>{{employee.title}}</td>
+    <td>{{employee.body}}</td>
+  </tr>
+</table>
+</div>
